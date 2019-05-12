@@ -1,0 +1,17 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "My first web calculator",
+  "main": "calculator.js",
+  "scripts": {
+    "cmp": "node-sass styles/main.scss styles/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alireza Hazrati",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "node-sass": "^4.12.0"
+  }
+}

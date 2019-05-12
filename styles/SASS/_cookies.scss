@@ -1,0 +1,56 @@
+
+.cookie {
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(
+      to right bottom, rgba($color-primary-light, 0.7),
+      rgba($color-primary-dark, 0.7)),
+      url(../assets/images/cookie.jpg);
+    background-size: cover;
+    background-position: top;
+      &__title {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 8rem 0;
+        display: inline-block;
+        color: $color-white;
+        letter-spacing: .2rem;
+        transition: all .2s;
+        
+    
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+    
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
+      }
+    
+      &__form {
+        font-size: 2rem;
+    
+        & h3 {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .form__container {
+      position: relative;
+      margin: 1rem 8rem;
+    }
+    
+    @media only screen and (max-width: 480px) {
+
+      .cookie {
+        height: 300% !important;
+        background-attachment: fixed;
+        
+        &__title {
+          margin-top: 70%;
+          margin-bottom: 5%;
+        }
+      }
+    }

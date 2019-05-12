@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/icons/favicon.ico">
+
+    <title>وب اپلیکیشن محاسبه شیرینی تدوین فرآیند</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="section group">
+            <div class="col span_2_of_3">
+                    <h1 class="header__title">Welcome to Tadvin Farayand Shirini Calculator</h1>
+                    <h2 class="header__discription">If an event is happened, or is going to happen in your life, you have to buy
+                        Shirini!</h2>
+            </div>
+            <div class="col span_1_of_3">
+                    <a href="#calc" class="header__btn--start btn btn--white hide">Start</a>
+
+            </div>
+        </div>
+        <div class="header__text col span-1-of-3">
+            <p class="">
+                Everyday in our lives, we made accomplishments or achive goals that we need to brag about.
+                 <br>But when it comes to Tadvin Farayand's Development Section, bragging is NOT ENOUGH!
+            </p>
+        </div>
+        
+        
+
+    </header>
+    <section id="calc" class="section group cookie">
+        <h1 class="cookie__title">What happened?</h1>
+        <div class="form__container">
+            <form class="cookie__form" action="/" method="POST">
+                <div>
+                    <div class="feature-box col span_1_of_4 cookie__form--life">
+                        <h3>its your</h3>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="wed" id="wed"
+                            onclick="setRandomColor()"><label for="wed">Wedding Ceremony</label><br>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="eng" id="eng"
+                            onclick="setRandomColor()"><label for="eng">Engagement Ceremony</label><br>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="birth"
+                            id="birth" onclick="setRandomColor()"><label for="birth">Birthday Party</label><br>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="salary"
+                            id="salary" onclick="setRandomColor()"><label for="salary">First Salary</label><br>
+                    </div>
+                    <div class="feature-box col span_1_of_4 cookie__form--travel">
+                        <h3>Traveling</h3>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="immi"
+                            id="immi" onclick="setRandomColor()"><label for="immi">Immigration</label><br>
+    
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="dom" id="dom"
+                            onclick="setRandomColor()"><label for="dom">Domestic Travel</label><br>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="int" id="int"
+                            onclick="setRandomColor()"><label for="int">International Travel</label><br>
+                    </div>
+                    <div class="feature-box col span_1_of_4 cookie__form--buy">
+                        <h3>You bought</h3>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="car" id="car"
+                            onclick="setRandomColor()"><label for="car">a car</label><br>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="house"
+                            id="house" onclick="setRandomColor()"><label for="house">a house</label><br>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="special"
+                            id="special" onclick="setRandomColor()"><label for="special">something special</label><br>
+                    </div>
+                    <div class="feature-box col span_1_of_4 cookie__form--other">
+                        <h3>Other</h3>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="team"
+                            id="team" onclick="setRandomColor()"><label for="team">Your favorite team won</label><br>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="reza"
+                            id="reza" onclick="setRandomColor()"><label for="reza">I'm Reza Mirzaei</label><br>
+                        <input class="cookie__form__radio form-radio" type="radio" name="happenedEvent" value="mate"
+                            id="mate" onclick="setRandomColor()"><label for="mate">I'm not single any more!</label><br>
+                    </div>
+                </div>
+                <button class="cl hd btn btn--white btn--calc" type="submit">Calculate Shirini</button>
+            </form>
+        </div>
+    </section>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

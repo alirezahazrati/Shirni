@@ -1,0 +1,43 @@
+
+.header {
+  // text-align: center;
+    // position: relative;
+    height: 100vh;
+    background-image: linear-gradient(
+      to right bottom, rgba($color-primary-light, 0.7),
+      rgba($color-primary-dark, 0.7)),
+      url(../assets/images/heading.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    color: $color-white;
+    // text-align: center;
+    // margin: auto;
+  
+    &__title {
+      padding: 10rem 4rem 4rem 4rem;
+      font-size: 4rem;
+    }
+
+    &__discription {
+      padding: 1rem 4rem 4rem 4rem;
+      font-size: 3rem;
+    }
+    
+    &__text {
+      position: absolute;
+      text-align: justify;
+      padding: 1rem 4rem 4rem 2rem;
+      font-size: 2rem;
+    }
+    
+      &__btn--start {
+        font-weight: 900;
+      }
+  }
+  @media only screen and (max-width: 480px) {
+	.header {
+    height: 200% !important;
+    background-attachment: fixed;
+  }
+}
